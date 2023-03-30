@@ -99,7 +99,7 @@ p {
     font-size: 110%;
     margin: 2%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
 }
 
@@ -209,9 +209,6 @@ footer>img {
     padding-left: 35px;
 }
 
-#foot {
-    
-}
 
 footer>h3 {
     background-color: black;
@@ -219,4 +216,59 @@ footer>h3 {
     font-size: larger;
     text-align: right;
     padding: 15 35 15 0;
+}
+
+@media screen and (max-width:992px){
+
+    .card {
+    width: 80%;
+    margin: 5%;
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+    section {
+        width: 100%;
+
+    }
+
+    .about{
+        margin: 2%;
+        padding: 2%;
+
+    }
+
+    .about>.title, .work>.title, .work>.line2 {
+        display: none;
+    }
+
+    img{
+        width: 30%;
+    }
+
+    .top>a {
+        font-size: x-large;
+    }
+
+}
+
+@media screen and (max-width:768px){
+    .top>a {
+        font-size: large;
+    }
+    .contact{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .bottom {
+        width: 65%;
+        display: flex;
+        justify-content: space-evenly;
+        margin: 0;
+        padding: 1%;
+        background-color: white;
+        border: solid 2px #e7e7e7
+        ;
+    }
+    
+
 }
